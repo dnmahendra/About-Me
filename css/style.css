@@ -14,7 +14,10 @@ body {
 }
 
 .masthead {
+    position: relative;
+    height: 200px;
     padding: 0.5em;
+    text-align: center;
     background-color: rgba(139,126,102,1);
     border-top: solid 1em #FFCF33;
     color: #FFCF33;
@@ -65,14 +68,22 @@ body {
 
 }
 
+.masthead-container {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 .masthead-image {
+    position: absolute;
+    top: 100%;
+    right: 100px;
+    transform: translateY(-50%);
     
     border: 5px solid white;
     border-radius: 50%;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .introduction-section > p,
